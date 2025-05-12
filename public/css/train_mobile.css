@@ -1,0 +1,488 @@
+@media (max-width: 1100px) {
+    .note-train {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .right-steps-content .coach {
+        padding: 24px 3px 12px;
+    }
+
+    .right-steps-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .wrap-filter {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1026px;
+        margin: auto;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #item-bus-0 {
+        padding-top: 50px;
+    }
+
+    .right-filter {
+        width: 100%;
+    }
+
+    .coupon-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        overflow: auto;
+    }
+
+    .custom-nav {
+        display: flex !important;
+        overflow: auto !important;
+        flex-wrap: nowrap !important;
+        padding-bottom: 10px !important;
+    }
+
+    .content-note-ticket {
+        font-size: 12px;
+    }
+
+    .d-flex .justify-content-between .mt-2 .d-flex .flex-column {
+        font-size: 12px;
+    }
+
+    .custom-1 {
+        padding-left: 20px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .mb-1 .text-bg-success {
+        display: none;
+    }
+
+    .d-flex .align-items-center .star-rating i {
+        font-size: 15px;
+        margin: 0 0.1rem;
+    }
+
+    .d-flex .date {
+        white-space: nowrap;
+    }
+
+    .item-check-review small {
+        white-space: nowrap;
+        margin-top: 4px;
+        margin-left: 5%;
+    }
+
+    .tab-content .list-group .w-100 .list-gr-review .mb-1 {
+        white-space: nowrap;
+        margin-left: -19px;
+    }
+
+    .tab-content .list-group .w-100 .list-gr-review {
+        margin-right: -47px;
+    }
+
+    .tag-dot {
+        display: none;
+    }
+
+    .policy-tab .dot {
+        margin-top: 36px;
+        margin-left: -53px;
+    }
+
+    .policy-tab .time-sa {
+        margin-top: 3px;
+        margin-left: -15px;
+    }
+
+    .custom-width {
+        width: 280px !important;
+    }
+
+    .airlinetickets {
+        width: 100%;
+    }
+
+    .left-filter {
+        width: 1150px;
+        display: none;
+    }
+
+    .right-filter {
+        white-space: normal;
+    }
+
+    header {
+        width: 100%;
+        max-width: 100vw;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .slogan-header {
+        display: none;
+    }
+
+    .full-trip-l {
+        display: none;
+    }
+
+    .ticket-info-l {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action-p {
+        position: relative;
+    }
+
+    .action-l {
+        margin-left: -18px;
+        padding-bottom: 5px;
+    }
+
+    .social-proof-l {
+        position: relative;
+        margin-left: -150px;
+        left: 0px;
+        display: none;
+    }
+
+    .notify-trip-l {
+        position: absolute;
+        right: 50px;
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 12px;
+        white-space: nowrap;
+        text-align: right;
+        max-width: 40vw;
+    }
+
+    .ticket-image-l img {
+        width: 60%;
+        height: 60%;
+        object-fit: revert;
+        border-radius: 50%;
+        margin-top: 4px;
+    }
+
+    .ticket-image-l {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .ticket-confirm-l {
+        display: none;
+    }
+
+    .train-name-l button {
+        display: none;
+    }
+
+    .bus-rating-l {
+        display: none;
+    }
+
+    .fare-l {
+        font-size: 12px;
+        margin-top: -63px;
+    }
+
+    .content-has-cop {
+        font-size: 10px;
+        margin-right: 0;
+        position: relative;
+        left: 8px;
+        top: -10px;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+    }
+
+    .seat-available {
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+        font-size: 12px;
+    }
+
+    .location-route-svg-l {
+        margin-left: -55px;
+    }
+
+    .location-route-svg-l {
+        display: none;
+    }
+
+    .from-to-content-l {
+        margin-right: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15%;
+    }
+
+    .svg-location {
+        display: block;
+    }
+
+    .content-l {
+        display: block;
+    }
+
+    .content-to-info-l {
+        text-align: end;
+        display: block;
+        width: 50%;
+        font-size: 1.5rem;
+    }
+
+    .place-l {
+        overflow: visible;
+        width: 100%;
+    }
+
+    .duration-l {
+        text-align: center;
+    }
+
+    .action-l button {
+        font-size: 1rem;
+    }
+
+    .container-textSeat {
+        display: block;
+        font-size: 14px;
+    }
+
+    .full-trip-l-train {
+        display: none;
+    }
+
+    /* Detail */
+    .container-l {
+        width: 97%;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .ticket-info-l {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action-p {
+        position: relative;
+    }
+
+    .action-l {
+        margin-left: -18px;
+        padding-bottom: 5px;
+    }
+
+    .social-proof-l {
+        position: relative;
+        margin-left: -150px;
+        left: 0px;
+        display: none;
+    }
+
+    .notify-trip-l {
+        position: absolute;
+        right: 50px;
+        font-size: 8px;
+        font-weight: 700;
+        line-height: 12px;
+        white-space: nowrap;
+        text-align: right;
+        max-width: 40vw;
+    }
+
+    .ticket-image-l {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    .ticket-image-l img {
+        width: 60%;
+        height: 60%;
+        object-fit: revert;
+        border-radius: 50%;
+        margin-top: 4px;
+    }
+
+    .content-has-cop {
+        font-size: 10px;
+        margin-right: 0;
+        position: relative;
+        left: 8px;
+        top: -10px;
+        transform: scale(1);
+        transition: transform 0.3s ease;
+    }
+
+    .seat-available {
+        margin-bottom: 10px;
+        transition: transform 0.3s ease;
+        font-size: 12px;
+    }
+
+    .fare-info-l-train {
+        margin-top: 65px;
+        font-size: 12px;
+    }
+
+    .fare-info-l-train {
+        position: relative;
+    }
+
+    .nonePay {
+        display: none;
+    }
+
+    .trip-train-reponesive {
+        display: block;
+        text-align: center;
+    }
+    #floating {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .steps-container-train {
+        padding: 0px 4px !important;
+        justify-content: center;
+    }
+
+    .container-steps-train {
+        min-height: 100px;
+    }
+
+    .wrap-steps-train {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-steps-train {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seat-groups-train {
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .seat-groups-train span {
+        display: none;
+    }
+
+    .seat-info-train {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .note-train {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .trip-train-reponesive p {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .w-container {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .train-items p {
+        width: 19px;
+    }
+
+    .row-utility {
+        display: block;
+    }
+
+    .icon-text i {
+        font-size: 1.3rem;
+    }
+
+    .wrap-couponTrain button {
+        height: 45px;
+    }
+
+    .content-train h4 {
+        font-size: 1.4rem;
+    }
+
+    .content-has-cop {
+        margin-right: 40%;
+    }
+}
+
+@media (max-width: 375px) {
+    .train-items p {
+        width: 18px;
+    }
+
+    .row-utility {
+        display: block;
+    }
+
+    .icon-text i {
+        font-size: 1.2rem;
+    }
+
+    .content-has-cop {
+        margin-right: 40%;
+    }
+
+    /* Seat */
+    .shipSeat {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-steps-content {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .active-train .show {
+        margin-left: -20px;
+    }
+}

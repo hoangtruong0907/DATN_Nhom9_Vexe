@@ -1,0 +1,166 @@
+.lb-loader,
+.lightbox {
+    text-align: center;
+    line-height: 0;
+    position: absolute;
+    left: 0
+}
+
+body.lb-disable-scrolling {
+    overflow: hidden
+}
+
+.lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #000;
+    filter: alpha(Opacity=80);
+    opacity: .8;
+    display: none
+}
+
+.lightbox {
+    width: 100%;
+    z-index: 10000;
+    font-weight: 400;
+    outline: 0
+}
+
+.lightbox .lb-image {
+    display: block;
+    width: 420px !important;
+    height: 500px !important;
+    max-width: inherit;
+    max-height: none;
+    border-radius: 3px;
+    border: 20px solid #fff
+}
+
+.lightbox a img {
+    border: none
+}
+
+.lb-outerContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #fff
+}
+
+.lb-loader {
+    top: 43%;
+    height: 25%;
+    width: 100%
+}
+.lb-nav a.lb-prev,
+.lb-nav a.lb-next,
+.lb-data .lb-close {
+    background: none; 
+    text-decoration: none; 
+}
+.lb-nav a.lb-prev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    color: #fff; 
+    font-size: 35px; 
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%);
+    pointer-events: all; 
+}
+.lb-nav a.lb-prev:before {
+    content: '\f053'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+}
+
+.lb-nav a.lb-next {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    color: #fff; 
+    font-size: 35px; 
+    position: absolute;
+    right: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    pointer-events: all; 
+}
+
+
+.lb-nav a.lb-next:before {
+    content: '\f054'; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900;
+}
+
+.lb-data .lb-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; 
+    height: 40px; 
+    color: #fff; 
+    font-size: 35px; 
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    cursor: pointer;
+}
+.lb-data .lb-close:before {
+    content: '\f00d'; 
+    font-family: 'Font Awesome 5 Free'; 
+    font-weight: 900; 
+}
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 12px;
+    color: #999
+}
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    width: 100%;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.lb-data {
+    padding: 0 4px;
+    color: #ccc
+}
+
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em
+}
+
+.lb-data .lb-caption {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1em
+}
+
+.lb-data .lb-caption a {
+    color: #4ae
+}

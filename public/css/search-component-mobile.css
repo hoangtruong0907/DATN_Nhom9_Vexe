@@ -1,0 +1,198 @@
+/* PC size */
+/* custom select slim */
+.custom-input-container.select-slim.select-from-input {
+    width: 90%;
+}
+.custom-input-container.select-slim .ss-main {
+    min-height: 45px;
+    border: none;
+}
+.custom-input-container.select-slim .ss-main:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 1150px) {
+    .slogan-header {
+        display: none;
+    }
+}
+@media (max-width: 1100px) {
+    .container-airlinetickets {
+        width: 90%;
+        z-index: 3;
+    }
+    .tab-content .tab-pane .ant-row-flex {
+        display: block;
+        text-align: center;
+    }
+    #pills-tab {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .nav-pills .nav-link span {
+        font-size: 12px;
+    }
+    .wrap-criteria {
+        z-index: 2;
+        display: flex;
+        gap: 10px;
+        height: 50px;
+    }
+    .wrap-criteria p {
+        font-size: 10px;
+    }
+    .total-slide {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+    #bus_search,
+    #train_search {
+        width: 100%;
+    }
+    .left-ant-row-flex {
+        display: block;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+    #bus_from_input,
+    #bus_to_input,
+    #bus_date_to,
+    #bus_date_from {
+        width: 290px;
+    }
+    .wrap-left-ant-row-flex {
+        display: block;
+    }
+    .custom-icon-container {
+        margin-left: 10px;
+    }
+    .custom-icon-container .fa-solid.fa-location-dot {
+        margin-left: -20px;
+    }
+    .custom-swap-container {
+        display: none;
+    }
+    .fa-solid.fa-bus-simple span {
+        margin-left: 10px;
+    }
+    #bus_search {
+        width: 100%;
+    }
+    .fa-solid fa-bus-simple {
+        margin-left: 20px;
+    }
+    .custom-input-container {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .custom-input-container.select-slim {
+        width: 100%;
+    }
+    .custom-input-container.select-slim.select-from-input {
+        width: 100%;
+    }
+    .custom-input-container.select-slim .ss-main {
+        min-height: 45px;
+        border: 1px solid #dcdee2;
+    }
+    .custom-input-container.select-slim .ss-main:focus {
+        box-shadow: 0 0 5px var(--ss-focus-color);
+    }
+    .flex-sum-left {
+        width: 100%;
+        padding: 1%;
+    }
+    .departure-bus-date .flex-sum-left {
+        padding-bottom: 5px;
+    }
+    .departure-bus-date {
+        margin-left: 9px;
+    }
+    .departure-bus-date-right {
+        margin-left: 9px;
+    }
+    .departure-plane-date-right {
+        margin-left: 9px;
+    }
+    .departure-train-date {
+        margin-left: 9px;
+    }
+    .departure-train-date-right {
+        margin-left: 9px;
+    }
+    .right-search-widget-inner-content {
+        padding-top: 10px;
+    }
+    #main-footer {
+        padding: 60px 10px;
+    }
+    .img-slide img {
+        width: 100%;
+        height: 500px;
+        max-height: 500px;
+        z-index: 0;
+    }
+    .sidenav {
+        z-index: 4;
+    }
+}
+@media (max-width: 992px) {
+    .total-header {
+        display: none;
+    }
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 10px;
+    }
+    .wrap-criteria {
+        gap: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .wrap-criteria {
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    #main-footer h2 {
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .departure-bus-date .fa-calendar {
+        display: none;
+    }
+    .departure-bus-date-right .fa-plus {
+        display: none;
+    }
+    .departure-plane-date-right .fa-plus {
+        display: none;
+    }
+    .departure-train-date .fa-calendar {
+        display: none;
+    }
+    .departure-train-date-right .fa-plus {
+        display: none;
+    }
+    .departure-plane-date .fa-calendar {
+        display: none;
+    }
+    .container-airlinetickets {
+        width: 100%;
+    }
+}
+@media (max-width: 375px) {
+    .login-mobi a {
+        font-size: 13px;
+    }
+    .wrap-criteria {
+        display: none;
+    }
+}

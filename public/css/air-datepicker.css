@@ -1,0 +1,46 @@
+.air-datepicker-cell -day- {
+    align-items: normal;
+    justify-content: normal;
+}
+
+.air-datepicker-cell {
+    flex-direction: column;
+}
+
+.wrap-cell {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.price-cell {
+    font-size: 10px;
+    color: rgb(71, 71, 71);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.lunar-date {
+    font-size: 10px;
+    color: rgb(133, 133, 133);
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+}
+
+.air-datepicker-body--cells.-days- {
+    grid-auto-rows: 50px;
+}
+
+.air-datepicker-body -days- {
+    height: 325px;
+    width: 350px;
+}
+
+.air-datepicker {
+    width: 350px;
+}
+

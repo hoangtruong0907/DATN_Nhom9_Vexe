@@ -1,0 +1,210 @@
+.seat-fare-original {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.seat-available svg rect {
+    stroke: rgb(179, 179, 179);
+    fill: rgb(255, 255, 255);
+}
+
+.seat-unavailable svg rect {
+    stroke: rgb(179, 179, 179);
+    fill: rgb(224, 224, 224);
+}
+
+.seat-selected svg rect {
+    stroke: rgb(39, 174, 96);
+    fill: rgb(139, 229, 176);
+}
+
+.seat-selected svg .icon-selected {
+    stroke: rgb(39, 174, 96);
+}
+
+.seat-end svg rect {
+    stroke: rgb(57, 241, 134);
+    fill: rgb(255, 255, 255);
+}
+
+.seat-discount svg rect {
+    stroke: rgb(251, 164, 66);
+}
+
+.seat-group svg rect {
+    stroke: rgb(174, 112, 255);
+}
+
+.icon-disabled-2 {
+    stroke: rgb(151, 151, 151);
+}
+
+.icon-selected-chon {
+    stroke: rgb(39, 174, 96);
+}
+
+.coach {
+    padding: 20px 8px 12px;
+    background: rgb(242, 242, 242);
+    border-radius: 25px 25px 5px 5px;
+}
+
+.card-border-radius {
+    border-radius: 8px;
+    border-color: rgb(224, 224, 224);
+}
+
+.form-floating-label {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-floating-label input {
+    padding: 12px 10px;
+    font-size: 1rem;
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+.form-floating-label label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #6c757d;
+    transition: 0.2s ease all;
+    pointer-events: none;
+}
+
+.form-floating-label input:focus~label,
+.form-floating-label input:not(:placeholder-shown)~label {
+    top: -10px;
+    left: 8px;
+    font-size: 0.85rem;
+    color: #495057;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.search-icon {
+    pointer-events: none;
+    color: #aaa;
+}
+
+.search-input:focus+.search-icon {
+    display: none;
+}
+
+/* tab content*/
+.tab-content {
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+}
+
+.modal-dialog {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+    min-width: 10rem;
+    text-align: center;
+}
+
+.nav-tabs .nav-link.active {
+    border-bottom: 2px solid #007bff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.custom-modal-width {
+    max-width: 700px;
+}
+
+.offcanvas-header {
+    border-bottom: 2px solid #000000d9;
+}
+
+/* popover chi tiết */
+.popover {
+    max-width: 500px;
+    width: 100%;
+}
+
+.popover-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popover-body {
+    font-size: 14px;
+}
+
+/* check box */
+.custom-checkbox {
+    position: relative;
+    padding-left: 30px;
+    /* Khoảng cách giữa checkbox và label */
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+    /* Không cho phép chọn text khi click */
+}
+
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+.custom-checkbox:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.custom-checkbox input:checked~.checkmark {
+    background-color: #007bff;
+    border: none;
+}
+
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+.custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.right-section {
+    min-width: 40%;
+}

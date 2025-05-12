@@ -1,0 +1,425 @@
+body {
+    background-color: #f0f0f0;
+}
+.custom-container {
+    width: 1016px;
+}
+.other-services {
+    border: 1px solid #c8c8c8;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.service-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: bold;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 100px;
+}
+.service-content {
+    max-width: 60%;
+    z-index: 1;
+}
+.service-title {
+    margin: 0;
+    font-size: 14px;
+}
+.service-description {
+    white-space: nowrap;
+    margin: 5px 0 0 0;
+    font-size: 9px;
+}
+.service-image {
+    max-width: 35%;
+    border-radius: 8px;
+}
+.service-card:hover,
+.service-card a:hover {
+    text-decoration: none;
+}
+.offcanvas-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #007bff;
+}
+.offcanvas-title {
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+.contact-info {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info .btn {
+    margin-top: 10px;
+}
+.card-body.text-center {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+}
+.card-body.text-center .fas.fa-check-circle {
+    font-size: 50px;
+    color: white;
+}
+.custom-offcanvas-header {
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.custom-offcanvas-header .btn-link {
+    color: white;
+}
+.offcanvas-title {
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+.contact-info {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-info .btn {
+    margin-top: 10px;
+}
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+.modal-title {
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.img-body img {
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 8px;
+    max-width: 100%;
+}
+.red-card {
+    background-image: url("https://229a2c9fe669f7b.cmccloud.com.vn/images/mobile-card1.png");
+}
+.green-card {
+    background-image: url("https://229a2c9fe669f7b.cmccloud.com.vn/images/mobile-card2.png");
+}
+.service-image {
+    max-width: 35%;
+    border-radius: 8px;
+}
+.app-promotion-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+}
+.app-promotion-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.app-promotion-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-qr-code {
+    margin-right: 15px;
+}
+.app-qr-code img {
+    width: 100px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+.app-download-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.app-download-link {
+    text-decoration: none;
+}
+.app-download-icon {
+    width: 120px;
+    border-radius: 8px;
+}
+a:hover {
+    text-decoration: none;
+}
+.my-ticket-btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: rgb(13, 46, 89);
+    border: 1px solid #0d4983;
+}
+.book-ticket-btn {
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+.chevron_left {
+    display: flex;
+    align-items: center;
+}
+.chevron_left p {
+    margin: 0;
+    padding-left: 5px;
+}
+.alert-warning {
+    border-color: orange;
+}
+.custom-card {
+    border: none;
+}
+#main-footer {
+    display: none;
+}
+.list-group-item {
+    display: flex;
+}
+.modal-content {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.modal-icon {
+    display: flex;
+    justify-content: center;
+}
+.modal-footer {
+    border-top: none;
+    margin-top: 15px;
+}
+.btn-outline-secondary {
+    border-color: #ced4da;
+    color: #495057;
+}
+.btn-outline-secondary:hover {
+    background-color: #e2e6ea;
+}
+.btn-danger {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+.btn-dark {
+    background-color: #1e2b37;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.btn-dark:hover {
+    background-color: #14202b;
+}
+.custom-help {
+    border: none;
+}
+.custom-cancel {
+    border: none;
+    border-top: 1px solid rgb(224, 224, 224);
+}
+.toggle-details {
+    cursor: pointer;
+    font-weight: bold;
+}
+.arrow-icon {
+    width: 16px;
+    vertical-align: middle;
+    transition: transform 0.3s;
+}
+.payment-details {
+    display: none;
+    margin-top: 10px;
+}
+.custom-button {
+    border: none;
+    background: none;
+}
+.custom-cancel-button {
+    border: none;
+    background: none;
+}
+.modal-icon-image {
+    width: 60px;
+}
+.success-icon-image {
+    width: 60px;
+}
+.card-body .card-title {
+    font-weight: 700 !important;
+}
+.other-services .font-weight-bold {
+    font-weight: 700 !important;
+}
+.other-services a {
+    text-decoration: none;
+    color: inherit;
+}
+.other-services a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+.font-weight-bold {
+    font-weight: 600 !important;
+}
+.bcCBBz {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+}
+.full-width-button {
+    width: 100%;
+}
+.custom-pay {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0px;
+    margin-bottom: 0px;
+}
+.custom-text {
+    font-weight: 500;
+    color: black !important;
+}
+.offcanvas-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+.refund-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+.refund-label {
+    color: black;
+    font-weight: 500;
+}
+.refund-amount {
+    color: rgb(34, 145, 34);
+    font-weight: 500;
+}
+.custom-text {
+    display: flex;
+    flex-direction: column;
+}
+.custom-alert {
+    font-size: 14px;
+    margin-top: 15px;
+}
+.float-btn {
+    margin-bottom: 0rem !important;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-image: linear-gradient(to right top, #ffa07a, #ffb57d, #ffcb85, #ffe093, #fdf4a5);;
+}
+
+
+.card-title {
+    font-size: 18px !important;
+}
+.other-services .custom-services {
+    font-size: 18px;
+}
+.custom-1 {
+    font-size: 13px;
+}
+.confetti-background {
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    left: -1px;
+    height: 100%;
+}
+.inline-block {
+    display: inline-block;
+}
+.office-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* style moble màn 500px */
+@media only screen and (max-width: 500px){
+    .custom-btn {
+        flex: 1 1 0%;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px -4px 16px;
+        z-index: 1;
+        border-top: 1px solid rgb(224, 224, 224);
+    }
+    .custom-container {
+        margin-top: 0 !important;
+    }
+    .btn-warning {
+        color: white !important;
+        background-color: rgb(13, 46, 89) !important;
+        border-color: rgb(13, 46, 89) !important;
+    }
+    .my-ticket-btn {
+        border-radius: 6px !important;
+        padding: 10px 20px !important;
+        font-weight: bold !important;
+        color: rgb(13, 46, 89) !important;
+        border: 1px solid #0d4983 !important;
+    }
+}
+
+
