@@ -43,7 +43,7 @@ body {
 */
 .auth-content {
     position: relative;
-    width: 480px;
+    width: 100%;
     padding: 15px;
     z-index: 5;
 }
@@ -103,4 +103,64 @@ p.text-muted {
 .wrapper p>a {
     color: #3e8ef7;
     font-weight: 600;
+}
+
+/*  */
+body {
+    background: linear-gradient(45deg, #6db3f2, #1e69de);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+}
+
+.brand {
+    width: 80px;
+    height: 80px;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+.form-control {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.auth-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-muted a {
+    color: #5a6268;
+}
+
+.text-muted a:hover {
+    text-decoration: none;
+    color: #007bff;
 }

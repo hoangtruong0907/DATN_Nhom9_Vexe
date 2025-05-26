@@ -4,7 +4,8 @@
             <button class="menu-button-filter" id="menuButton" onclick="toggleMenuFilter()">☰</button>
             <div class="logo-header">
                 <a href="/">
-                    <img src="{{ asset('images/logo-svexere.svg') }}" alt="logo">
+                    <!-- <img src="{{ asset('images/logo-svexere.svg') }}" alt="logo"> -->
+                    <img src="{{ asset('https://sbaygroup.com/images/logosbaytravel.png') }}" alt="logo">
                 </a>
             </div>
             <div class="slogan-header">
@@ -92,48 +93,109 @@
 
 <!-- Modal Login/Register -->
 <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="authModalLabel">Đăng nhập</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="mb-4">
-                    <label for="phoneNumber" class="form-label m-0">Số điện thoại</label>
-                    <div class="input-group mb-4">
-                        <select class="form-select flex-shrink-1" style="max-width: 120px" id="phoneCode"
-                            aria-label="Phone code">
-                            <option value="+84" selected>(Viet Nam) +84</option>
-                            <option value="+01">(A) +01</option>
-                            <option value="+02">(B) +02</option>
-                        </select>
-                        <input type="text" class="form-control flex-grow-1" id="phoneNumber"
-                            placeholder="Số điện thoại">
-                    </div>
-                </div>
-                <button type="button" class="btn btn-primary w-100">Tiếp tục</button>
-                <div class="text-center my-1">
-                    <div class="d-flex align-items-center justify-content-center">
-                        <hr class="flex-grow-1">
-                        <span class="text-muted mx-2">hoặc</span>
-                        <hr class="flex-grow-1">
-                    </div>
-                </div>
-                <a href="{{ route('auth.google') }}" class="btn btn-danger w-100" style="text-decoration: none;">
-                    Tiếp tục với Google
-                </a>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content border-0 shadow p-4">
+      <div class="row">
+        <!-- Left side - Auth Form -->
+        <div class="col-md-6 p-4">
+          <!-- Sign In Form -->
+          <div id="signInForm">
+            <h2 class="fw-bold mb-2">WELCOME BACK</h2>
+            <p class="text-muted mb-4">Welcome back! Please enter your details.</p>
 
-                <div class="mt-3 d-flex align-items-center justify-content-start" id="authSwitch">
-                    <span>Bạn chưa có tài khoản?</span>
-                    <button type="button" class="btn btn-link" id="toggleAuth" style="text-decoration: none;">
-                        Đăng ký
-                    </button>
+            <form>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control rounded-3 shadow-sm" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Password</label>
+                <input type="password" class="form-control rounded-3 shadow-sm" placeholder="**********">
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember me</label>
                 </div>
+                <a href="#" class="text-decoration-none">Forgot password</a>
+              </div>
+
+              <button type="submit" class="btn btn-danger w-100 rounded-3 py-2 fw-semibold">Sign in</button>
+
+              <div class="text-center my-3 text-muted">or</div>
+
+              <a href="{{ route('auth.google') }}" class="btn btn-outline-secondary w-100 rounded-3 py-2 d-flex align-items-center justify-content-center gap-2">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="20">
+                Sign in with Google
+              </a>
+            </form>
+
+            <div class="text-center mt-3">
+              <span class="text-muted">Don't have an account?</span>
+              <button class="btn btn-link text-danger fw-semibold p-0" onclick="toggleForm()">Sign up for free!</button>
             </div>
+          </div>
+
+          <!-- Sign Up Form -->
+          <div id="signUpForm" style="display: none;">
+            <h2 class="fw-bold mb-2">CREATE ACCOUNT</h2>
+            <p class="text-muted mb-4">Let’s get started with your new account.</p>
+
+            <form>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Full Name</label>
+                <input type="text" class="form-control rounded-3 shadow-sm" placeholder="Enter your full name">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control rounded-3 shadow-sm" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Password</label>
+                <input type="password" class="form-control rounded-3 shadow-sm" placeholder="Create a password">
+              </div>
+
+              <button type="submit" class="btn btn-danger w-100 rounded-3 py-2 fw-semibold">Sign up</button>
+
+              <div class="text-center my-3 text-muted">or</div>
+
+              <a href="{{ route('auth.google') }}" class="btn btn-outline-secondary w-100 rounded-3 py-2 d-flex align-items-center justify-content-center gap-2">
+                <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="20">
+                Sign up with Google
+              </a>
+            </form>
+
+            <div class="text-center mt-3">
+              <span class="text-muted">Already have an account?</span>
+              <button class="btn btn-link text-danger fw-semibold p-0" onclick="toggleForm()">Sign in</button>
+            </div>
+          </div>
         </div>
+        
+
+        <!-- Right side - Illustration -->
+        <div class="col-md-6 d-none d-md-block p-0">
+        <img src="{{ asset('images/sbay.png') }}" alt="Illustration" class="img-fluid h-100 w-100" style="object-fit: cover;">
+
+        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+<script>
+  function toggleForm() {
+    const signInForm = document.getElementById("signInForm");
+    const signUpForm = document.getElementById("signUpForm");
+
+    const isSignInVisible = signInForm.style.display !== "none";
+    signInForm.style.display = isSignInVisible ? "none" : "block";
+    signUpForm.style.display = isSignInVisible ? "block" : "none";
+  }
+</script>
+
+
 @auth
     @php
         $user = Auth::user();

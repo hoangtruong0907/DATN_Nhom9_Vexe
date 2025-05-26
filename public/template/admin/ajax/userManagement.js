@@ -18,7 +18,7 @@ $(document).ready(function () {
         };
 
         $.ajax({
-            url: "/admin/users/store",
+            url: "/admin/user/store",
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

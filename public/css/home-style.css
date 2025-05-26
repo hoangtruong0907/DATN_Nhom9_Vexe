@@ -122,3 +122,107 @@
 a {
     text-decoration: none !important;
 }
+
+
+/* chat box */
+#chatbot-new {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    display: flex;
+    gap: 12px;
+    background: var(--df-messenger-button-titlebar-color);
+    padding: 10px 14px;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    align-items: center;
+    z-index: 9999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Icon chung */
+#chatbot-new a.chatbot-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #0078FF; /* màu xanh dễ chịu */
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#chatbot-new a.chatbot-icon:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+/* Riêng icon zalo chứa ảnh */
+#chatbot-new a.chatbot-icon.zalo {
+    background: none;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+}
+
+#chatbot-new a.chatbot-icon.zalo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#chatbot-new a.chatbot-icon.zalo:hover img {
+    transform: scale(1.1);
+}
+
+/* Link text */
+#chatbot-new a.chatbot-text {
+    padding: 8px 14px;
+    background-color: #0078FF;
+    border-radius: 24px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#chatbot-new a.chatbot-text:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+/* Biểu tượng câu hỏi trong link */
+#chatbot-new a.hoi-dap-mobile span i {
+    font-size: 20px;
+}
+
+/* Responsive nhỏ hơn 480px (điện thoại) */
+@media (max-width: 480px) {
+    #chatbot-new {
+        bottom: 12px;
+        right: 12px;
+        gap: 8px;
+        padding: 8px 10px;
+    }
+
+    #chatbot-new a.chatbot-icon,
+    #chatbot-new a.chatbot-icon.zalo img {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    #chatbot-new a.chatbot-text {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}

@@ -114,3 +114,6 @@ Route::get('/load-content', function () {
 });
 //update profile
 Route::post('/tai-khoan/thong-tin/update_profile',[InfoController::class,'update_profile'])->name('update_profile');
+
+//Delete User
+Route::delete('/admin/users/delete/{id}', [UserController::class, 'destroy'])->name('admin.users.destroy');

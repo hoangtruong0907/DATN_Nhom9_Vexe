@@ -46,7 +46,7 @@
                                         <div class="flex-none mr-3">
                                             <div class="p-1 bg-white-dark/30 rounded-full"><img
                                                     class="h-8 w-8 rounded-full object-cover"
-                                                    src="{{ asset('/template/admin/assets/images/user-profile.jpeg') }}" />
+                                                    src="{{ asset('/template/admin/assets/images/user1.jpg') }}" />
                                             </div>
                                         </div> 
                                         <div>

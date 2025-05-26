@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+
 <!-- slide -->
 <div class="total-slide position-relative">
     <div class="container-airlinetickets position-absolute top-50 start-50 translate-middle shadow">
@@ -18,7 +19,7 @@
         ])
     </div>
     <div class="img-slide">
-        <img src="{{asset('storage/images/banner/'. optional($banner_current)->slide_path)}}" alt="slide">
+    <img src="{{asset('storage/images/banner/'. optional($banner_current)->slide_path)}}" alt="slide">
     </div>
     <div class="wrap-criteria">
         <div class="criteria-slide">
@@ -137,4 +138,18 @@
         });
     });
 </script>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="NewAgent"
+  agent-id="a91d4ee9-2d60-452e-bbd2-d6c703ee1d39"
+  language-code="vi"
+></df-messenger>
+
+<div id="chatbot-new">
+    <a href="https://zalo.me/0964277082" target="_blank" class="chatbot-icon zalo">
+        <img src="https://sbaygroup.com/images/zalo-img-sbay.jpg" alt="zalo" />
+    </a>     
+</div>
+
 @endpush
