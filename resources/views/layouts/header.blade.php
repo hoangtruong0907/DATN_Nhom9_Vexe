@@ -4,8 +4,8 @@
             <button class="menu-button-filter" id="menuButton" onclick="toggleMenuFilter()">☰</button>
             <div class="logo-header">
                 <a href="/">
-                    <!-- <img src="{{ asset('images/logo-svexere.svg') }}" alt="logo"> -->
-                    <img src="{{ asset('https://sbaygroup.com/images/logosbaytravel.png') }}" alt="logo">
+                    <img src="{{ asset('images/logodolphin.png') }}" alt="logo">
+                    <!-- <img src="{{ asset('https://sbaygroup.com/images/logosbaytravel.png') }}" alt="logo"> -->
                 </a>
             </div>
             <div class="slogan-header">
@@ -13,19 +13,24 @@
             </div>
         </div>
         <ul class="right-header nav">
-            <li class="menu-group-item" id="btn-hotline">
-                <div class="Navbar2__ButtonHotline-sa2air-8 button-nav">
-                    <div class="material-icons-wrapper md-20 icon-phone">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
+            <div class="hotline-container" aria-label="Hotline 24/7">
+                <button class="hotline-btn button-nav" id="hotlineBtn" aria-haspopup="true" aria-expanded="false" aria-controls="hotlineDropdown">
+                    <i class="fa fa-phone content-button-nav" aria-hidden="true"></i>
+                    Hotline 24/7
+                </button>
+                <div class="hotline-dropdown" id="hotlineDropdown" role="menu" aria-labelledby="hotlineBtn">
+                    <div role="menuitem">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:1900969681">1900969681</a>
+                    <span> - Để phản hồi về dịch vụ và xử lý sự cố</span>
                     </div>
-                    <p class="base__Headline03-sc-1tvbuqk-15 content-button-nav">Hotline 24/7</p>
+                    <div role="menuitem">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <a href="tel:1900888684">1900888684</a>
+                    <span> - Để đặt vé qua điện thoại (24/7)</span>
+                    </div>
                 </div>
-                <div class="contact-dropdown">
-                    <i class="fa fa-phone" aria-hidden="true"></i> Hotline 1:<a href="tel:0967041900">
-                        0967041900</a><br>
-                    <i class="fa fa-phone" aria-hidden="true"></i> Hotline 2:<a href="tel:0967041900"> 0967041900</a>
-                </div>
-            </li>
+            </div>
             @guest
                 <li class="menu-group-item">
                     <div class="Navbar2__ButtonHotline-sa2air-8 button-nav">
@@ -193,6 +198,25 @@
     signInForm.style.display = isSignInVisible ? "none" : "block";
     signUpForm.style.display = isSignInVisible ? "block" : "none";
   }
+  
+
+   document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('hotlineBtn');
+    const dropdown = document.getElementById('hotlineDropdown');
+
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      const isActive = dropdown.classList.toggle('active');
+      btn.setAttribute('aria-expanded', isActive);
+    });
+
+    document.addEventListener('click', () => {
+      dropdown.classList.remove('active');
+      btn.setAttribute('aria-expanded', false);
+    });
+
+    dropdown.addEventListener('click', e => e.stopPropagation());
+  });
 </script>
 
 

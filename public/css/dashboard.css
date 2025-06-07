@@ -1,0 +1,104 @@
+.panel {
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  color: white;
+  position: relative;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+.panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgb(0 0 0 / 0.25);
+}
+
+.bg-cyan-gradient {
+  background: linear-gradient(135deg, #20bfe6 0%, #3bc6e5 100%);
+}
+.bg-violet-gradient {
+  background: linear-gradient(135deg, #7f00ff 0%, #e100ff 100%);
+}
+.bg-blue-gradient {
+  background: linear-gradient(135deg, #e54668 0%, #d3902b 100%);
+}
+.bg-pink-gradient {
+  background: linear-gradient(135deg, #da7b38 0%, #e13186 100%);
+}
+
+
+.data-value {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 3px;
+  text-decoration-color: rgba(255 255 255 / 0.8);
+  user-select: text;
+}
+
+.change-badge {
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+  background-color: rgba(255 255 255 / 0.35);
+  border-radius: 9999px;
+  font-weight: 700;
+  vertical-align: middle;
+  user-select: none;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.2);
+  transition: background-color 0.3s ease;
+}
+.change-badge.positive {
+  background-color: rgba(0, 200, 83, 0.7);
+  box-shadow: 0 2px 8px rgba(0, 200, 83, 0.5);
+}
+.change-badge.negative {
+  background-color: rgba(244, 67, 54, 0.7);
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.5);
+}
+
+.prev-week {
+  margin-top: 1.25rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  user-select: none;
+  opacity: 0.85;
+  letter-spacing: 0.015em;
+}
+
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  opacity: 0.75;
+  transition: opacity 0.3s ease;
+}
+.eye-icon:hover {
+  opacity: 1;
+}
+
+canvas {
+  display: block;
+  width: 100% !important;
+  height: 110px !important;
+  margin-top: 1.5rem;
+  filter: drop-shadow(0 0 5px rgba(255 255 255 / 0.4));
+  border-radius: 12px;
+}
+
+.chartjs-x-axis-ticks {
+  fill: rgba(255, 255, 255, 0.9);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.chartjs-y-axis {
+  display: none !important;
+}

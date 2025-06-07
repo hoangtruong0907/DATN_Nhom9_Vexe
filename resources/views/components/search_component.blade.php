@@ -93,7 +93,7 @@
                     <div class="departure-bus-date-right flex-sum-left">
                         <i class="fa fa-plus" aria-hidden="true"></i> <input type="text"
                             class="date-input data-add-input" id="bus_date_from" placeholder="Thêm ngày về"
-                            autocomplete="off" disabled>
+                            autocomplete="off">
                     </div>
                 </div>
             </div>

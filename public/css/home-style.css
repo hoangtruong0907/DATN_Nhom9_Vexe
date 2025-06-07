@@ -125,6 +125,12 @@ a {
 
 
 /* chat box */
+df-messenger {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 10000 !important; /* cao hơn icon zalo */
+}
 #chatbot-new {
     position: fixed;
     bottom: 90px;
@@ -132,7 +138,7 @@ a {
     display: flex;
     gap: 12px;
     background: var(--df-messenger-button-titlebar-color);
-    padding: 10px 14px;
+    padding: 9px 9px;
     border-radius: 50px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     align-items: center;
@@ -225,4 +231,36 @@ a {
         padding: 6px 10px;
         font-size: 12px;
     }
+}
+
+/* Slide logo { */
+.logo-marquee {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.logo-track {
+  display: flex;
+  width: calc(12 * 180px); /* 12 logo (6 logo x 2 lần) x 180px mỗi logo */
+  animation: marquee 20s linear infinite;
+}
+
+.logo-track img {
+  width: 100px;    /* chỉnh kích thước logo phù hợp */
+  margin-right: 90px;
+  object-fit: contain;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
 }

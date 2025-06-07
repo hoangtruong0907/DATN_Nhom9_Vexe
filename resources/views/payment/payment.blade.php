@@ -130,11 +130,11 @@
                         <!-- Hiển thị chi tiết thanh toán khi chọn "Thanh toán khi lên xe" -->
                         <div id="paymentDetails" class="payment-details">
                             <h5>Hướng dẫn thanh toán</h5>
-                            <p>Bạn hãy nói rằng đã đặt chỗ qua Vexere và thanh toán <strong>{{ number_format($seatTicket['totalFare'], 0, ',', '.') }} đ</strong> cho tài xế khi lên xe.</p>
+                            <p>Bạn hãy nói rằng đã đặt chỗ qua DolphinBus và thanh toán <strong>{{ number_format($seatTicket['totalFare'], 0, ',', '.') }} đ</strong> cho tài xế khi lên xe.</p>
                             <h6>Lưu ý quan trọng</h6>
                             <div class="alert alert-warning">
                                 <i class="bi bi-exclamation-triangle-fill"></i> Hãy hủy vé khi không còn nhu cầu di chuyển.
-                                Vexere sẽ yêu cầu bạn thanh toán trước cho những lần sau nếu bạn đặt vé nhưng không đi hoặc hủy vé quá nhiều lần.
+                                DolphinBus sẽ yêu cầu bạn thanh toán trước cho những lần sau nếu bạn đặt vé nhưng không đi hoặc hủy vé quá nhiều lần.
                             </div>
                         </div>
 

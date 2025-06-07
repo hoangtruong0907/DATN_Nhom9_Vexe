@@ -1,5 +1,5 @@
 @media (max-width: 1150px) {
-    .total-header #btn-hotline {
+    .total-header #hotlineBtn {
         display: none;
     }
 
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 992px) {
-    .total-header #btn-hotline {
+    .total-header #hotlineBtn {
         display: none;
     }
 
@@ -1091,7 +1091,7 @@
 }
 
 @media (min-width: 768px) {
-    .total-header #btn-hotline {
+    .total-header #hotlineBtn {
         display: block;
     }
 }

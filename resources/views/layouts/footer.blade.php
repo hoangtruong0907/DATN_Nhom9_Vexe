@@ -51,11 +51,11 @@
                     <!-- Nội dung footer của bạn -->
 
                     <div class="copyright">
-                        <h2>CÔNG TY CỔ PHẦN SBAY VIỆT NAM</h2>
+                        <h2>CÔNG TY CỔ PHẦN DOLPHINBUS VIỆT NAM</h2>
                         <p>Địa chỉ: Số A3012, Tòa nhà Tứ Hiệp Plaza - KĐT Pháp Vân - Tp Hà Nội</p>
                         <p>Địa chỉ:  Số 3 - Đinh Thị Hoà - Q. Sơn Trà - Tp Đà Nẵng</p>
                         <p>Giấy chứng nhận ĐKKD số 0102249980 do Sở KH và ĐT TP. Hà Nội cấp lần đầu ngày 05/09/2007</p>
-                        <p>Copyright © 2024 <a href="#">Sbaygroup.com.vn</a></p>
+                        <p>Copyright © 2025 <a href="#">dolphinbus.com.vn</a></p>
                     </div>
                 </div><!--- END COL -->
             </div><!--- END ROW -->

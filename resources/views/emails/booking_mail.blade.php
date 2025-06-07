@@ -82,7 +82,7 @@
 
 <div class="container">
     <div class="header">
-        <img src="https://example.com/logo.png" alt="Đại Lý Vé Xe Logo">
+        <img src="https://sbaygroup.com/images/logosbaytravel.png" alt="Đại Lý Vé Xe Logo">
         <h1>Chi Tiết Đặt Vé Của Bạn</h1>
     </div>
 

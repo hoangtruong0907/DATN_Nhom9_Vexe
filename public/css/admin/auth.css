@@ -19,19 +19,18 @@
 [1. Body / #body]
 */
 body {
-    background: #f1f1f1;
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96); /* Gradient from image */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif; /* Adjust font as needed */
 }
 
 .wrapper {
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     overflow: hidden;
     min-width: 100%;
@@ -46,121 +45,219 @@ body {
     width: 100%;
     padding: 15px;
     z-index: 5;
+    display: flex; /* Ensure flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Take full viewport height */
 }
 
 /*------------------------------------------------------------------
 [3. Cards / .card]
 */
-.auth-content .card {
+.card.login-card {
     margin-bottom: 0;
-    -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Softer shadow */
     border: none;
-    -webkit-transition: all 0.5s ease-in-out;
+    border-radius: 15px; /* More rounded corners */
     transition: all 0.5s ease-in-out;
+    width: 80%; /* Adjust overall card width */
+    max-width: 900px; /* Max width for larger screens */
+    background-color: white;
+    display: flex; /* Make the card a flex container */
+    overflow: hidden; /* Hide overflow for rounded corners */
 }
 
-.auth-content .card .card-block,
-.auth-content .card .card-body {
-    padding: 30px 25px;
+.card.login-card .card-body {
+    padding: 40px; /* Increase padding */
 }
 
-.auth-content .form-control {
-    background: #f4f7fa;
-    min-height: 42px;
-    line-height: 42px;
-    font-size: 14px;
-    padding: 10px 15px;
-    height: 42px;
-}
-
-/*------------------------------------------------------------------
-[4. Miscellaneous]
-*/
-.shadow-2 {
-    -webkit-box-shadow: 0 10px 18px 0 rgba(62, 57, 107, 0.2);
-    box-shadow: 0 10px 18px 0 rgba(62, 57, 107, 0.2);
-}
-
-p.text-muted {
-    font-size: 13px;
-}
-
-/*------------------------------------------------------------------
-[5. Adjustments to dafault behaviors]
-*/
-.btn {
-    padding: 10px 20px;
-    border-radius: 0.25rem;
-    font-size: 14px;
-    margin-bottom: 5px;
-    margin-right: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.wrapper a,
-.wrapper p>a {
-    color: #3e8ef7;
-    font-weight: 600;
-}
-
-/*  */
-body {
-    background: linear-gradient(45deg, #6db3f2, #1e69de);
-    min-height: 100vh;
+.left-panel {
+    background-color: #ffffff; /* White background for the left panel */
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.laptop-illustration-container {
+    position: relative;
     width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    background-color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.brand {
-    width: 80px;
-    height: 80px;
+.laptop-img {
+    width: 70%; /* Adjust size of laptop */
+    max-width: 300px;
+    height: auto;
+    z-index: 2; /* Bring laptop to front */
 }
 
-.form-label {
-    font-weight: 500;
+/* Animated shapes */
+.shape {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle-outline-1 {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #6db3f2;
+    top: 15%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.triangle-1 {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #a8c0ff;
+    border-radius: 0;
+    top: 25%;
+    right: 15%;
+    transform: rotate(30deg);
+    animation-delay: 1.5s;
+}
+
+.circle-1 {
+    width: 40px;
+    height: 40px;
+    background-color: #3f2b96;
+    top: 70%;
+    left: 20%;
+    animation-delay: 3s;
+}
+
+.triangle-outline-1 {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 40px solid #1e69de;
+    border-radius: 0;
+    top: 80%;
+    right: 5%;
+    transform: rotate(150deg);
+    animation-delay: 4.5s;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+
+.right-panel {
+    padding: 30px 40px; /* Padding for the right panel */
+}
+
+.member-login-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.custom-input-group {
+    margin-bottom: 20px; /* Space between input fields */
+}
+
+.custom-input-group .input-group-text {
+    background-color: #f0f0f0; /* Light gray background for icon */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-right: none;
+    border-radius: 8px 0 0 8px; /* Rounded left side */
+    padding: 12px 15px; /* Adjust padding for icon */
+    color: #777;
 }
 
 .form-control {
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background: #f0f0f0; /* Light gray input background */
+    min-height: 50px; /* Increase input height */
+    line-height: 50px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    height: 50px;
+    border: 1px solid #e0e0e0; /* Light border */
+    border-left: none;
+    border-radius: 0 8px 8px 0; /* Rounded right side */
+    box-shadow: none; /* Remove default box shadow */
 }
 
-.btn-primary {
+.form-control:focus {
+    border-color: #888;
+    box-shadow: none;
+    background-color: #f8f8f8;
+}
+
+.btn-login {
     width: 100%;
-    padding: 12px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 8px; /* Slightly more rounded button */
     font-weight: 600;
     transition: background-color 0.3s;
+    background-color: #4CAF50; /* Green color from image */
+    border-color: #4CAF50;
+    color: white;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
-.btn-primary:hover {
-    background-color: #0056b3;
+.btn-login:hover {
+    background-color: #45a049; /* Darker green on hover */
+    border-color: #45a049;
 }
 
-.auth-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.text-muted a {
-    color: #5a6268;
-}
-
-.text-muted a:hover {
+.forgot-link a,
+.create-account-link a {
+    color: #888; /* Muted link color */
+    font-size: 0.95rem;
     text-decoration: none;
-    color: #007bff;
+    transition: color 0.3s;
+}
+
+.forgot-link a:hover,
+.create-account-link a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+.create-account-link {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 40px; /* Space from login button */
+}
+
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .card.login-card {
+        width: 95%;
+    }
+    .left-panel {
+        display: none; /* Hide left panel on smaller screens */
+    }
+    .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+    .card.login-card .card-body {
+        padding: 30px 20px;
+    }
+    .member-login-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
 }

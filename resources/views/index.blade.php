@@ -106,6 +106,30 @@
     @endif
 </div>
 
+<div class="logo-marquee">
+  <div class="logo-track">
+    <img src="{{ asset('images/audi.png') }}" alt="Logo 1" />
+    <img src="{{ asset('images/mec.png') }}" alt="Logo 2" />
+    <img src="{{ asset('images/peugeot.png') }}" alt="Logo 3" />
+    <img src="{{ asset('images/suzuki.png') }}" alt="Logo 4" />
+    <img src="{{ asset('images/bmw.png') }}" alt="Logo 5" />
+    <img src="{{ asset('images/ford.png') }}" alt="Logo 6" />
+    <img src="{{ asset('images/hyundai.png') }}" alt="Logo 7" />
+    <img src="{{ asset('images/vinFast.png') }}" alt="Logo 8" />
+
+    <!-- Lặp lại bộ logo -->
+    <img src="{{ asset('images/audi.png') }}" alt="Logo 1" />
+    <img src="{{ asset('images/mec.png') }}" alt="Logo 2" />
+    <img src="{{ asset('images/peugeot.png') }}" alt="Logo 3" />
+    <img src="{{ asset('images/suzuki.png') }}" alt="Logo 4" />
+    <img src="{{ asset('images/bmw.png') }}" alt="Logo 5" />
+    <img src="{{ asset('images/ford.png') }}" alt="Logo 6" />
+    <img src="{{ asset('images/hyundai.png') }}" alt="Logo 7" />
+    <img src="{{ asset('images/vinFast.png') }}" alt="Logo 8" />
+  </div>
+</div>
+
+
 @endsection
 @push('page-scripts')
 <script src="https://cdn.jsdelivr.net/npm/air-datepicker@3.5.3/air-datepicker.min.js"></script>
@@ -141,7 +165,7 @@
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 <df-messenger
   intent="WELCOME"
-  chat-title="NewAgent"
+  chat-title="Chat Ai"
   agent-id="a91d4ee9-2d60-452e-bbd2-d6c703ee1d39"
   language-code="vi"
 ></df-messenger>

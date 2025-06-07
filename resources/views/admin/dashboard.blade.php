@@ -2,146 +2,210 @@
 
 @section('title', 'Trang Quản trị')
 
+@section('styles')
+    <link rel="stylesheet" href="{{ asset('css/dashboard.css') }}">
+@endsection
+
 @section('contents')
-<div class="animate__animated p-6" :class="[$store.app.animation]">
-    <div>
-        <ul class="flex space-x-2 rtl:space-x-reverse">
-            <li>
-                <a href="javascript:;" class="text-primary hover:underline">Dashboard</a>
-            </li>
-            <li class="before:content-['/'] ltr:before:mr-1 rtl:before:ml-1">
-                <span>Finance</span>
-            </li>
-        </ul>
-        <div class="pt-5">
-            <div class="mb-6 grid grid-cols-1 gap-6 text-white sm:grid-cols-2 xl:grid-cols-4">
-                
-                <!-- Users Visit -->
-                <div class="panel bg-gradient-to-r from-cyan-500 to-cyan-400">
-                    <div class="flex justify-between">
-                        <div class="text-md font-semibold">Users Visit</div>
-                        <div x-data="dropdown" @click.outside="open = false" class="dropdown">
-                            <a href="javascript:;" @click="toggle">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-70 hover:opacity-80">
-                                    <circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                </svg>
-                            </a>
-                            <ul x-show="open" x-transition="" x-transition.duration.300ms="" class="text-black ltr:right-0 rtl:left-0 dark:text-white-dark" style="display: none;">
-                                <li><a href="javascript:;" @click="toggle">View Report</a></li>
-                                <li><a href="javascript:;" @click="toggle">Edit Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-5 flex items-center">
-                        <div class="text-3xl font-bold">$170.46</div>
-                        <div class="badge bg-white/30">+ 2.35%</div>
-                    </div>
-                    <div class="mt-5 flex items-center font-semibold">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0">
-                            <path opacity="0.5" d="M3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C4.97196 6.49956 7.81811 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957Z" stroke="currentColor" stroke-width="1.5"></path>
-                            <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="1.5"></path>
-                        </svg>
-                        Last Week 44,700
-                    </div>
-                </div>
+<div class="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
 
-                <!-- Sessions -->
-                <div class="panel bg-gradient-to-r from-violet-500 to-violet-400">
-                    <div class="flex justify-between">
-                        <div class="text-md font-semibold">Sessions</div>
-                        <div x-data="dropdown" @click.outside="open = false" class="dropdown">
-                            <a href="javascript:;" @click="toggle">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-70 hover:opacity-80">
-                                    <circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                </svg>
-                            </a>
-                            <ul x-show="open" x-transition="" x-transition.duration.300ms="" class="text-black ltr:right-0 rtl:left-0 dark:text-white-dark" style="display: none;">
-                                <li><a href="javascript:;" @click="toggle">View Report</a></li>
-                                <li><a href="javascript:;" @click="toggle">Edit Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-5 flex items-center">
-                        <div class="text-3xl font-bold">74,137</div>
-                        <div class="badge bg-white/30">- 2.35%</div>
-                    </div>
-                    <div class="mt-5 flex items-center font-semibold">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0">
-                            <path opacity="0.5" d="M3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C4.97196 6.49956 7.81811 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957Z" stroke="currentColor" stroke-width="1.5"></path>
-                            <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="1.5"></path>
-                        </svg>
-                        Last Week 84,709
-                    </div>
-                </div>
-
-                <!-- Time On-Site -->
-                <div class="panel bg-gradient-to-r from-blue-500 to-blue-400">
-                    <div class="flex justify-between">
-                        <div class="text-md font-semibold">Time On-Site</div>
-                        <div x-data="dropdown" @click.outside="open = false" class="dropdown">
-                            <a href="javascript:;" @click="toggle">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-70 hover:opacity-80">
-                                    <circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                </svg>
-                            </a>
-                            <ul x-show="open" x-transition="" x-transition.duration.300ms="" class="text-black ltr:right-0 rtl:left-0 dark:text-white-dark" style="display: none;">
-                                <li><a href="javascript:;" @click="toggle">View Report</a></li>
-                                <li><a href="javascript:;" @click="toggle">Edit Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-5 flex items-center">
-                        <div class="text-3xl font-bold">38,085</div>
-                        <div class="badge bg-white/30">+ 1.35%</div>
-                    </div>
-                    <div class="mt-5 flex items-center font-semibold">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0">
-                            <path opacity="0.5" d="M3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C4.97196 6.49956 7.81811 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957Z" stroke="currentColor" stroke-width="1.5"></path>
-                            <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="1.5"></path>
-                        </svg>
-                        Last Week 37,894
-                    </div>
-                </div>
-
-                <!-- Bounce Rate -->
-                <div class="panel bg-gradient-to-r from-fuchsia-500 to-fuchsia-400">
-                    <div class="flex justify-between">
-                        <div class="text-md font-semibold">Bounce Rate</div>
-                        <div x-data="dropdown" @click.outside="open = false" class="dropdown">
-                            <a href="javascript:;" @click="toggle">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 opacity-70 hover:opacity-80">
-                                    <circle cx="5" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle opacity="0.5" cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                    <circle cx="19" cy="12" r="2" stroke="currentColor" stroke-width="1.5"></circle>
-                                </svg>
-                            </a>
-                            <ul x-show="open" x-transition="" x-transition.duration.300ms="" class="text-black ltr:right-0 rtl:left-0 dark:text-white-dark" style="display: none;">
-                                <li><a href="javascript:;" @click="toggle">View Report</a></li>
-                                <li><a href="javascript:;" @click="toggle">Edit Report</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-5 flex items-center">
-                        <div class="text-3xl font-bold">49.10%</div>
-                        <div class="badge bg-white/30">- 0.35%</div>
-                    </div>
-                    <div class="mt-5 flex items-center font-semibold">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0">
-                            <path opacity="0.5" d="M3.27489 15.2957C2.42496 14.1915 2 13.6394 2 12C2 10.3606 2.42496 9.80853 3.27489 8.70433C4.97196 6.49956 7.81811 4 12 4C16.1819 4 19.028 6.49956 20.7251 8.70433C21.575 9.80853 22 10.3606 22 12C22 13.6394 21.575 14.1915 20.7251 15.2957C19.028 17.5004 16.1819 20 12 20C7.81811 20 4.97196 17.5004 3.27489 15.2957Z" stroke="currentColor" stroke-width="1.5"></path>
-                            <path d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z" stroke="currentColor" stroke-width="1.5"></path>
-                        </svg>
-                        Last Week 50.01%
-                    </div>
-                </div>
-
-            </div>
-        </div>
+  <!-- Doanh thu vé -->
+  <div class="panel bg-cyan-gradient">
+    <div class="flex justify-between items-center mb-4">
+      <span class="font-semibold text-lg">Doanh thu vé</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <circle cx="5" cy="12" r="2" />
+        <circle cx="12" cy="12" r="2" opacity="0.5" />
+        <circle cx="19" cy="12" r="2" />
+      </svg>
     </div>
+    <div>
+      <span class="data-value">₫1,250,000,000</span>
+      <span class="change-badge positive">+5.20%</span>
+    </div>
+    <canvas id="doanhThuChart"></canvas>
+    <div class="prev-week">
+      <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path opacity="0.7" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3" /></svg>
+      <span>Tuần trước: ₫1,190,000,000</span>
+    </div>
+  </div>
+
+  <!-- Số lượng vé -->
+  <div class="panel bg-violet-gradient">
+    <div class="flex justify-between items-center mb-4">
+      <span class="font-semibold text-lg">Số lượng vé</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <circle cx="5" cy="12" r="2" />
+        <circle cx="12" cy="12" r="2" opacity="0.5" />
+        <circle cx="19" cy="12" r="2" />
+      </svg>
+    </div>
+    <div>
+      <span class="data-value">45,360</span>
+      <span class="change-badge negative">-1.15%</span>
+    </div>
+    <canvas id="soLuongVeChart"></canvas>
+    <div class="prev-week">
+      <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path opacity="0.7" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3" /></svg>
+      <span>Tuần trước: 45,880</span>
+    </div>
+  </div>
+
+  <!-- Chi phí -->
+  <div class="panel bg-blue-gradient">
+    <div class="flex justify-between items-center mb-4">
+      <span class="font-semibold text-lg">Chi phí</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <circle cx="5" cy="12" r="2" />
+        <circle cx="12" cy="12" r="2" opacity="0.5" />
+        <circle cx="19" cy="12" r="2" />
+      </svg>
+    </div>
+    <div>
+      <span class="data-value">₫670,000,000</span>
+      <span class="change-badge negative">-0.80%</span>
+    </div>
+    <canvas id="chiPhiChart"></canvas>
+    <div class="prev-week">
+      <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path opacity="0.7" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3" /></svg>
+      <span>Tuần trước: ₫675,000,000</span>
+    </div>
+  </div>
+
+  <!-- Lợi nhuận -->
+  <div class="panel bg-pink-gradient">
+    <div class="flex justify-between items-center mb-4">
+      <span class="font-semibold text-lg">Lợi nhuận</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <circle cx="5" cy="12" r="2" />
+        <circle cx="12" cy="12" r="2" opacity="0.5" />
+        <circle cx="19" cy="12" r="2" />
+      </svg>
+    </div>
+    <div>
+      <span class="data-value">₫580,000,000</span>
+      <span class="change-badge positive">+2.00%</span>
+    </div>
+    <canvas id="loiNhuanChart"></canvas>
+    <div class="prev-week">
+      <svg class="eye-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path opacity="0.7" d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3" /></svg>
+      <span>Tuần trước: ₫570,000,000</span>
+    </div>
+  </div>
+
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    new Chart(document.getElementById('doanhThuChart').getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'],
+        datasets: [{
+          data: [1200000000, 1250000000, 1230000000, 1280000000, 1300000000, 1270000000, 1250000000],
+          borderColor: 'rgba(255,255,255,0.9)',
+          backgroundColor: 'rgba(255,255,255,0.35)',
+          fill: true,
+          tension: 0.35,
+          pointRadius: 4,
+          pointHoverRadius: 7,
+          borderWidth: 3,
+          pointBackgroundColor: 'white'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: { color: 'rgba(255,255,255,0.95)', font: {size: 14, weight: '600'} },
+            grid: { display: false }
+          },
+          y: { display: false }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('soLuongVeChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'],
+        datasets: [{
+          data: [46000, 45300, 45500, 45000, 44800, 45200, 45360],
+          backgroundColor: 'rgba(255,255,255,0.7)',
+          borderRadius: 8,
+          barPercentage: 0.6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: { color: 'rgba(255,255,255,0.95)', font: {size: 14, weight: '600'} },
+            grid: { display: false }
+          },
+          y: { display: false }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('chiPhiChart').getContext('2d'), {
+      type: 'line',
+      data: {
+        labels: ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'],
+        datasets: [{
+          data: [680000000, 675000000, 672000000, 670000000, 668000000, 669000000, 670000000],
+          borderColor: 'rgba(255,255,255,0.9)',
+          backgroundColor: 'rgba(255,255,255,0.25)',
+          fill: true,
+          tension: 0.35,
+          pointRadius: 3,
+          borderWidth: 2,
+          pointBackgroundColor: 'white'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: { color: 'rgba(255,255,255,0.95)', font: {size: 14, weight: '600'} },
+            grid: { display: false }
+          },
+          y: { display: false }
+        }
+      }
+    });
+
+    new Chart(document.getElementById('loiNhuanChart').getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['T2', 'T3', 'T4', 'T5', 'T6', 'T7', 'CN'],
+        datasets: [{
+          data: [570000000, 575000000, 580000000, 585000000, 590000000, 585000000, 580000000],
+          backgroundColor: 'rgba(255,255,255,0.8)',
+          borderRadius: 8,
+          barPercentage: 0.6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: {
+            ticks: { color: 'rgba(255,255,255,0.95)', font: {size: 14, weight: '600'} },
+            grid: { display: false }
+          },
+          y: { display: false }
+        }
+      }
+    });
+  });
+</script>
 @endsection
